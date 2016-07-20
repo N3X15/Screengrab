@@ -1,0 +1,91 @@
+<!ENTITY title.label "ScreenGrab!">
+<!ENTITY screengrab.copy "Copia">
+<!ENTITY screengrab.save "Desa">
+<!ENTITY screengrab.upload "Penja">
+<!ENTITY screengrab.preview "Vista prèvia...">
+<!ENTITY screengrab.crop "Escapça...">
+<!ENTITY screengrab.resize "Redimensiona...">
+<!ENTITY screengrab.page "Pàgina completa/Marc...">
+<!ENTITY screengrab.visible.portion.of.page "Fragment visible...">
+<!ENTITY screengrab.selection "Selecció...">
+<!ENTITY screengrab.element "Element...">
+<!ENTITY screengrab.actions.open.dir "Obre la carpeta">
+<!ENTITY screengrab.actions.use.zoom "Zoom">
+
+<!ENTITY screengrab.preference "Configuració...">
+<!ENTITY screengrab.preference.description "Opcions de configuració per al ScreenGrab!">
+<!ENTITY screengrab.preference.panel.label "Configuració del Screengrab!">
+
+<!ENTITY pSettings.label "Configuració">
+<!ENTITY pSettingsDefault.label "Restaura la configuració per defecte">
+<!ENTITY pSettingsSave.label "Desa la configuració">
+<!ENTITY pSettingsCopy.label "Desa la configuració al portarretalls">
+<!ENTITY pSettingsLoad.label "Importa una configuració">
+
+<!ENTITY screengrab.preference.image.name "Nom de la imatge">
+<!ENTITY screengrab.preference.image.name.template "Plantilla per al nom de la imatge ">
+<!ENTITY screengrab.preference.image.name.template.in.file.name "Al nom del fitxer ">
+<!ENTITY screengrab.preference.image.name.template.in.image "A la imatge ">
+<!ENTITY screengrab.preference.image.name.template.user.codes "Codis d'usuari ">
+<!ENTITY screengrab.preference.image.name.template.code.sg "S'utilitzarà el nom «Screengrab» ">
+<!ENTITY screengrab.preference.image.name.template.code.title "títol de la pàgina ">
+<!ENTITY screengrab.preference.image.name.template.code.url "url de la pàgina ">
+<!ENTITY screengrab.preference.image.name.template.code.domain "domini de la pàgina ">
+<!ENTITY screengrab.preference.image.name.template.code.domain_without_www "domain without 'WWW'">
+<!ENTITY screengrab.preference.image.name.template.code.yyyy "any (4 xifres) ">
+<!ENTITY screengrab.preference.image.name.template.code.yy "any (2 xifres) ">
+<!ENTITY screengrab.preference.image.name.template.code.mm "mes (01-12)">
+<!ENTITY screengrab.preference.image.name.template.code.dd "dia del mes (01-31)">
+<!ENTITY screengrab.preference.image.name.template.code.month "nom del mes ">
+<!ENTITY screengrab.preference.image.name.template.code.weekday "nom del dia ">
+<!ENTITY screengrab.preference.image.name.template.code.h "hora ">
+<!ENTITY screengrab.preference.image.name.template.code.m "minut ">
+<!ENTITY screengrab.preference.image.name.template.code.s "segon ">
+<!ENTITY screengrab.preference.image.name.template.code.ut "marca horària de l'unix ">
+<!ENTITY screengrab.preference.image.name.template.disabled.chars.filename "(*) Caràcters no admesos: / | \ : * ? ' &quot; &lt; &gt;">
+<!ENTITY screengrab.preference.image.name.template.title.crop "{#TITLE#} - text complet, {#TITLE10#},{#TITLE30#},{#TITLE50#},... - s'escapçarà el text">
+<!ENTITY screengrab.preference.replace.char.in.filename "Reemplaça els caràcters no admesos:">
+<!ENTITY screengrab.preference.replace.char.in.filename.space "espai">
+
+<!ENTITY screengrab.preference.convertumlaute "Converteix els caràcters especials">
+<!ENTITY screengrab.preference.convertumlaute.description "Converteix els caràcters especials al nom del fitxer (ä -> ae, ö -> oe ...)">
+<!ENTITY screengrab.preference.onlyascii "Només caràcters ASCII al nom del fitxer">
+<!ENTITY screengrab.preference.onlyascii.description "Suprimeix tots els caràcters no ASCII al nom del fitxer">
+<!ENTITY screengrab.preference.image "Imatge">
+<!ENTITY screengrab.preference.image.insert.text "Insereix text a la imatge">
+<!ENTITY screengrab.preference.image.format "Format de la imatge">
+<!ENTITY screengrab.preference.image.save "Desa">
+<!ENTITY screengrab.preference.image.save.path "Ruta:">
+<!ENTITY screengrab.preference.image.save.quickly "Desa automàticament (no demanarà el nom de fitxer ni la carpeta de destinació)">
+<!ENTITY screengrab.preference.image.select.dir "Navega">
+<!ENTITY screengrab.preference.image.save.integrate.download.manager "Integra amb el gestor de baixades">
+
+<!ENTITY screengrab.preference.image.upload "Penja">
+<!ENTITY screengrab.preference.image.upload.disable "Inhabilita la càrrega">
+<!ENTITY screengrab.preference.image.upload.link.to.clipboard "Copia l'enllaç de la imatge al portarretalls">
+<!ENTITY screengrab.preference.image.upload.storage "Servidor d'emmagatzematge:">
+
+<!ENTITY screengrab.preference.notifications "Notificacions">
+<!ENTITY screengrab.preference.notifications.bar "Barra de notificacions">
+<!ENTITY screengrab.preference.notifications.popup "Finestra emergent">
+<!ENTITY screengrab.preference.notifications.statusbar "Barra d'estat">
+<!ENTITY screengrab.preference.notifications.off "Inhabilita">
+<!ENTITY screengrab.preference.reset "Reinicia">
+<!ENTITY screengrab.preference.actions "Accions">
+<!ENTITY screengrab.preference.actions.menu "Menú">
+<!ENTITY screengrab.preference.actions.click.icon "Clic a la icon">
+<!ENTITY screengrab.preference.actions.click.arrow "Clic a la fletxa">
+<!ENTITY screengrab.preference.actions.click.middle "Clic amb la roda del ratolí">
+<!ENTITY screengrab.preference.actions.click.right "Clic amb el botó dret del ratolí">
+<!ENTITY screengrab.preference.actions.show.button.toolbar "Mostra el botó a la barra d'eines">
+<!ENTITY screengrab.preference.actions.show.button.toolbar.addon "Mostra el botó a la barra de complements">
+<!ENTITY screengrab.preference.actions.show.button.toolbar.disabled "El botó no està habilitat">
+<!ENTITY screengrab.preference.actions.show.button.without.arrow "Show button without an arrow">
+
+<!ENTITY screengrab.preference.hotkeys "Dreceres">
+<!ENTITY screengrab.preference.hotkeys.not.unique "Aquesta combinació ja existeix">
+
+<!ENTITY screengrab.preference.autoscroll.page.top.during.capture "Desplaçament automàtic a l'inici de la pàgina durant la captura">
+
+<!ENTITY screengrab.preference.selection "Selecció">
+<!ENTITY screengrab.preference.selection.fast_mode "Fast mode">

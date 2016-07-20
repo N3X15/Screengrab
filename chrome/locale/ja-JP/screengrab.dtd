@@ -1,0 +1,91 @@
+﻿<!ENTITY title.label "ScreenGrab!">
+<!ENTITY screengrab.copy "コピー...">
+<!ENTITY screengrab.save "保存...">
+<!ENTITY screengrab.upload "アップロード...">
+<!ENTITY screengrab.preview "プレビュー...">
+<!ENTITY screengrab.crop "トリミング...">
+<!ENTITY screengrab.resize "サイズ変更...">
+<!ENTITY screengrab.page "ページ(フレーム)全体...">
+<!ENTITY screengrab.visible.portion.of.page "表示部分のみ...">
+<!ENTITY screengrab.selection "選択範囲...">
+<!ENTITY screengrab.element "要素...">
+<!ENTITY screengrab.actions.open.dir "フォルダを開く">
+<!ENTITY screengrab.actions.use.zoom "ズームを使う">
+
+<!ENTITY screengrab.preference "設定...">
+<!ENTITY screengrab.preference.description "ScreenGrab! の設定">
+<!ENTITY screengrab.preference.panel.label "Screengrab! 設定">
+
+<!ENTITY pSettings.label "設定">
+<!ENTITY pSettingsDefault.label "デフォルトに復元">
+<!ENTITY pSettingsSave.label "設定を保存">
+<!ENTITY pSettingsCopy.label "設定をクリップボードへコピー">
+<!ENTITY pSettingsLoad.label "設定を読み込む">
+
+<!ENTITY screengrab.preference.image.name "画像の名前">
+<!ENTITY screengrab.preference.image.name.template "画像の名前テンプレート">
+<!ENTITY screengrab.preference.image.name.template.in.file.name "ファイル名">
+<!ENTITY screengrab.preference.image.name.template.in.image "画像内">
+<!ENTITY screengrab.preference.image.name.template.user.codes "ユーザー コード">
+<!ENTITY screengrab.preference.image.name.template.code.sg "'Screengrab' を付加する">
+<!ENTITY screengrab.preference.image.name.template.code.title "Web ページのタイトル">
+<!ENTITY screengrab.preference.image.name.template.code.url "Web ページの URL">
+<!ENTITY screengrab.preference.image.name.template.code.domain "Web ページのドメイン">
+<!ENTITY screengrab.preference.image.name.template.code.domain_without_www "domain without 'WWW'">
+<!ENTITY screengrab.preference.image.name.template.code.yyyy "西暦4桁">
+<!ENTITY screengrab.preference.image.name.template.code.yy "西暦下2桁">
+<!ENTITY screengrab.preference.image.name.template.code.mm "月 (01-12)">
+<!ENTITY screengrab.preference.image.name.template.code.dd "日 (01-31)">
+<!ENTITY screengrab.preference.image.name.template.code.month "月名(1月-12月)">
+<!ENTITY screengrab.preference.image.name.template.code.weekday "曜日名(月曜日-日曜日)">
+<!ENTITY screengrab.preference.image.name.template.code.h "時">
+<!ENTITY screengrab.preference.image.name.template.code.m "分">
+<!ENTITY screengrab.preference.image.name.template.code.s "秒">
+<!ENTITY screengrab.preference.image.name.template.code.ut "Unix タイムスタンプ">
+<!ENTITY screengrab.preference.image.name.template.disabled.chars.filename "(*) ファイル名に使用できない文字: / | \ : * ? ' &quot; &lt; &gt;">
+<!ENTITY screengrab.preference.image.name.template.title.crop "{#TITLE#} - タイトル文字すべて, {#TITLE10#},{#TITLE30#},{#TITLE50#},... - タイトル文字数指定">
+<!ENTITY screengrab.preference.replace.char.in.filename "無効な文字を置換:">
+<!ENTITY screengrab.preference.replace.char.in.filename.space "半角スペース">
+
+<!ENTITY screengrab.preference.convertumlaute "ドイツ語表記を変換">
+<!ENTITY screengrab.preference.convertumlaute.description "Convert German Umlaute in filename (ä -> ae, ö -> oe ...)">
+<!ENTITY screengrab.preference.onlyascii "ファイル名を ASCII 文字セットのみにする">
+<!ENTITY screengrab.preference.onlyascii.description "Remove all non-ascii-character from filename">
+<!ENTITY screengrab.preference.image "画像">
+<!ENTITY screengrab.preference.image.insert.text "画像にテキストを挿入">
+<!ENTITY screengrab.preference.image.format "画像形式">
+<!ENTITY screengrab.preference.image.save "保存">
+<!ENTITY screengrab.preference.image.save.path "パス:">
+<!ENTITY screengrab.preference.image.save.quickly "クイック保存 (フォルダ、ファイル名のダイアログなし)">
+<!ENTITY screengrab.preference.image.select.dir "選択...">
+<!ENTITY screengrab.preference.image.save.integrate.download.manager "ダウンロード マネージャに統合する">
+
+<!ENTITY screengrab.preference.image.upload "アップロード">
+<!ENTITY screengrab.preference.image.upload.disable "アップロード無効">
+<!ENTITY screengrab.preference.image.upload.link.to.clipboard "画像のリンクをクリップボードへコピー">
+<!ENTITY screengrab.preference.image.upload.storage "ストレージ:">
+
+<!ENTITY screengrab.preference.notifications "通知">
+<!ENTITY screengrab.preference.notifications.bar "通知バー">
+<!ENTITY screengrab.preference.notifications.popup "ポップアップ">
+<!ENTITY screengrab.preference.notifications.statusbar "ステータス バー">
+<!ENTITY screengrab.preference.notifications.off "オフ">
+<!ENTITY screengrab.preference.reset "リセット">
+<!ENTITY screengrab.preference.actions "アクション">
+<!ENTITY screengrab.preference.actions.menu "メニュー">
+<!ENTITY screengrab.preference.actions.click.icon "アイコン クリック">
+<!ENTITY screengrab.preference.actions.click.arrow "矢印クリック">
+<!ENTITY screengrab.preference.actions.click.middle "マウスの中ボタンをクリック">
+<!ENTITY screengrab.preference.actions.click.right "マウスの右ボタンをクリック">
+<!ENTITY screengrab.preference.actions.show.button.toolbar "ツール バーにボタン表示">
+<!ENTITY screengrab.preference.actions.show.button.toolbar.addon "アドオン バーにボタン表示">
+<!ENTITY screengrab.preference.actions.show.button.toolbar.disabled "ボタン無効">
+<!ENTITY screengrab.preference.actions.show.button.without.arrow "矢印なしでボタンを表示">
+
+<!ENTITY screengrab.preference.hotkeys "ホット キー">
+<!ENTITY screengrab.preference.hotkeys.not.unique "そのキーの組み合わせはすでに存在します">
+
+<!ENTITY screengrab.preference.autoscroll.page.top.during.capture "キャプチャ中にページの上部へオート スクロール">
+
+<!ENTITY screengrab.preference.selection "選択範囲">
+<!ENTITY screengrab.preference.selection.fast_mode "Fast mode">

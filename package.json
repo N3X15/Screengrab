@@ -1,0 +1,34 @@
+{
+  "id": "{02450914-cdd9-410f-b1da-db004e18c671}",
+  "title": "Screengrab - Cleaned",
+  "name": "screengrab",
+  "version": "0.99.04c~cleaned",
+  "homepage": "http://www.s3blog.org/screengrab.html",
+  "icon": "resource://@screengrab/skin/screengrab_icon.gif",
+  "preferencesURL": "chrome://screengrab/content/preferences.xul",
+  "description": "A screen capture utility for Firefox. Now without ads!",
+  "main": "chrome/content/Header.js",
+  "author": "Oleksandr Popov",
+  "contributors": [
+    "Andy Mutton (Author original Screengrab)",
+    "Jean-Bernard 'Goofy' Marcon from babelzilla.org (Help with locales)",
+    "All of the guys at babelzilla.org (Translations)",
+    "Dominic Letz (SecurityException bug fix)",
+    "vboriesazeau (Pointing out the deprecated getBoxObjectFor call)",
+    "TeliuTe (Create Simplified Chinese Language Pack)",
+    "Kurt Lucas (Settings fix)",
+    "Marcin Lisson (Translation to German)",
+    "pulsmz (Create Japanese Language Pack)",
+    "Carlos Villarrubia (Translation to Spain)",
+    "Dean Guan (Translation to Traditional Chinese)",
+    "Alexandre Magno (Translation to Brazilian Portuguese)",
+    "Rob Nelson (Removed ads)"
+  ],
+  "engines": {
+    "firefox": ">=38.0a1"
+  },
+  "license": "MPL",
+  "keywords": [
+    "jetpack"
+  ]
+}

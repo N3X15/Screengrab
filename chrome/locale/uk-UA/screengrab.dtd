@@ -1,0 +1,91 @@
+<!ENTITY title.label "ScreenGrab!">
+<!ENTITY screengrab.copy "Скопіювати...">
+<!ENTITY screengrab.save "Зберегти...">
+<!ENTITY screengrab.upload "Вивантажити...">
+<!ENTITY screengrab.preview "Перегляд...">
+<!ENTITY screengrab.crop "Вирізати...">
+<!ENTITY screengrab.resize "Змінити розмір...">
+<!ENTITY screengrab.page "Цілу сторінку/фрейм...">
+<!ENTITY screengrab.visible.portion.of.page "Видиму частину...">
+<!ENTITY screengrab.selection "Виділення...">
+<!ENTITY screengrab.element "Елемент...">
+<!ENTITY screengrab.actions.open.dir "Відкрити теку зберігання">
+<!ENTITY screengrab.actions.use.zoom "Використати Zoom">
+
+<!ENTITY screengrab.preference "Налаштування...">
+<!ENTITY screengrab.preference.description "Налаштування ScreenGrab!">
+<!ENTITY screengrab.preference.panel.label "Налаштування Screengrab!">
+
+<!ENTITY pSettings.label "Налаштування">
+<!ENTITY pSettingsDefault.label "Відновити типові налаштування">
+<!ENTITY pSettingsSave.label "Зберегти налаштування">
+<!ENTITY pSettingsCopy.label "Копіювати налаштування">
+<!ENTITY pSettingsLoad.label "Завантажити налаштування">
+
+<!ENTITY screengrab.preference.image.name "Назва зображення">
+<!ENTITY screengrab.preference.image.name.template "Шаблони назви зображення">
+<!ENTITY screengrab.preference.image.name.template.in.file.name "Для назви файлу">
+<!ENTITY screengrab.preference.image.name.template.in.image "В зображенні">
+<!ENTITY screengrab.preference.image.name.template.user.codes "Опис кодів">
+<!ENTITY screengrab.preference.image.name.template.code.sg "додати «Screengrab»">
+<!ENTITY screengrab.preference.image.name.template.code.title "заголовок web-сайту">
+<!ENTITY screengrab.preference.image.name.template.code.url "адреса web-сайту">
+<!ENTITY screengrab.preference.image.name.template.code.domain "домен web-сайту">
+<!ENTITY screengrab.preference.image.name.template.code.domain_without_www "домен без «WWW»">
+<!ENTITY screengrab.preference.image.name.template.code.yyyy "рік (4 цифри)">
+<!ENTITY screengrab.preference.image.name.template.code.yy "рік (2 цифри)">
+<!ENTITY screengrab.preference.image.name.template.code.mm "місяць (01-12)">
+<!ENTITY screengrab.preference.image.name.template.code.dd "день місяця (01-31)">
+<!ENTITY screengrab.preference.image.name.template.code.month "назва місяця">
+<!ENTITY screengrab.preference.image.name.template.code.weekday "день тижня">
+<!ENTITY screengrab.preference.image.name.template.code.h "години">
+<!ENTITY screengrab.preference.image.name.template.code.m "хвилини">
+<!ENTITY screengrab.preference.image.name.template.code.s "секунди">
+<!ENTITY screengrab.preference.image.name.template.code.ut "unix-час">
+<!ENTITY screengrab.preference.image.name.template.disabled.chars.filename "(*) Заборонені символи в назві файла: / | \ : * ? ' &quot; &lt; &gt;">
+<!ENTITY screengrab.preference.image.name.template.title.crop "{#TITLE#} - увесь заголовок, {#TITLE10#},{#TITLE30#},{#TITLE50#},... - заголовок буде обрізано">
+<!ENTITY screengrab.preference.replace.char.in.filename "Заміна заборонених символів:">
+<!ENTITY screengrab.preference.replace.char.in.filename.space "пробіл">
+
+<!ENTITY screengrab.preference.convertumlaute "Конвертувати німецькі літери">
+<!ENTITY screengrab.preference.convertumlaute.description "Конвертувати німецькі літери в назві файлу (ä -> ae, ö -> oe ...)">
+<!ENTITY screengrab.preference.onlyascii "Тільки ascii-символи в назві файлу">
+<!ENTITY screengrab.preference.onlyascii.description "Видалити все не ascii-символи в назві файлу">
+<!ENTITY screengrab.preference.image "Зображення">
+<!ENTITY screengrab.preference.image.insert.text "Вставити текст в зображення">
+<!ENTITY screengrab.preference.image.format "Формат зображення">
+<!ENTITY screengrab.preference.image.save "Зберігання">
+<!ENTITY screengrab.preference.image.save.path "Шлях:">
+<!ENTITY screengrab.preference.image.save.quickly "Швидке зберігання (без запиту назви файлу та директорії)">
+<!ENTITY screengrab.preference.image.select.dir "Огляд">
+<!ENTITY screengrab.preference.image.save.integrate.download.manager "Інтегрувати в Менеджер завантажень">
+
+<!ENTITY screengrab.preference.image.upload "Вивантаження">
+<!ENTITY screengrab.preference.image.upload.disable "Відключити вивантаження">
+<!ENTITY screengrab.preference.image.upload.link.to.clipboard "Скопіювати посилання на зображення в буфер обміну">
+<!ENTITY screengrab.preference.image.upload.storage "Сховище:">
+
+<!ENTITY screengrab.preference.notifications "Сповіщення">
+<!ENTITY screengrab.preference.notifications.bar "Панель сповіщень">
+<!ENTITY screengrab.preference.notifications.popup "Спливаюче сповіщення">
+<!ENTITY screengrab.preference.notifications.statusbar "Панель стану">
+<!ENTITY screengrab.preference.notifications.off "Вимкнено">
+<!ENTITY screengrab.preference.reset "Скидання">
+<!ENTITY screengrab.preference.actions "Дії">
+<!ENTITY screengrab.preference.actions.menu "Меню">
+<!ENTITY screengrab.preference.actions.click.icon "Натискання на картинку">
+<!ENTITY screengrab.preference.actions.click.arrow "Натискання на стрілку">
+<!ENTITY screengrab.preference.actions.click.middle "Натискання на середню кнопку миші">
+<!ENTITY screengrab.preference.actions.click.right "Натискання на праву кнопку миші">
+<!ENTITY screengrab.preference.actions.show.button.toolbar "Показати кнопку на панелі інструментів">
+<!ENTITY screengrab.preference.actions.show.button.toolbar.addon "Показати кнопку на панелі додатків">
+<!ENTITY screengrab.preference.actions.show.button.toolbar.disabled "Відключити кнопку">
+<!ENTITY screengrab.preference.actions.show.button.without.arrow "Показувати кнопку без стрілки">
+
+<!ENTITY screengrab.preference.hotkeys "Клавіатурні скорочення">
+<!ENTITY screengrab.preference.hotkeys.not.unique "Таке скорочення вже існує">
+
+<!ENTITY screengrab.preference.autoscroll.page.top.during.capture "Авто-прокручування на початок сторінки під час захоплення">
+
+<!ENTITY screengrab.preference.selection "Виділення">
+<!ENTITY screengrab.preference.selection.fast_mode "Быстрый режим">

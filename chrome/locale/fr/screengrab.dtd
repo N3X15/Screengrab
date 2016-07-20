@@ -1,0 +1,91 @@
+<!ENTITY title.label "ScreenGrab!">
+<!ENTITY screengrab.copy "Copier...">
+<!ENTITY screengrab.save "Enregistrer...">
+<!ENTITY screengrab.upload "Téléverser...">
+<!ENTITY screengrab.preview "Prévisualiser...">
+<!ENTITY screengrab.crop "Recadrer...">
+<!ENTITY screengrab.resize "Redimensionner...">
+<!ENTITY screengrab.page "Page complète/cadre complet...">
+<!ENTITY screengrab.visible.portion.of.page "Portion visible...">
+<!ENTITY screengrab.selection "Sélection...">
+<!ENTITY screengrab.element "Élément...">
+<!ENTITY screengrab.actions.open.dir "Ouvrir le répertoire">
+<!ENTITY screengrab.actions.use.zoom "Utiliser le zoom">
+
+<!ENTITY screengrab.preference "Paramètres...">
+<!ENTITY screengrab.preference.description "Paramètres de Screengrab">
+<!ENTITY screengrab.preference.panel.label "Paramètres Screengrab">
+
+<!ENTITY pSettings.label "Paramètres">
+<!ENTITY pSettingsDefault.label "Restaurer les paramètres par défaut">
+<!ENTITY pSettingsSave.label "Enregistrer les paramètres">
+<!ENTITY pSettingsCopy.label "Copier les paramètres dans le presse-papiers">
+<!ENTITY pSettingsLoad.label "Charger les paramètres">
+
+<!ENTITY screengrab.preference.image.name "Nom de l'image">
+<!ENTITY screengrab.preference.image.name.template "Modèles">
+<!ENTITY screengrab.preference.image.name.template.in.file.name "Nom de fichier">
+<!ENTITY screengrab.preference.image.name.template.in.image "Texte dans l'image ">
+<!ENTITY screengrab.preference.image.name.template.user.codes "Codes de l'utilisateur ">
+<!ENTITY screengrab.preference.image.name.template.code.sg "le nom « Screengrab » sera utilisé">
+<!ENTITY screengrab.preference.image.name.template.code.title "titre de la page web">
+<!ENTITY screengrab.preference.image.name.template.code.url "URL de la page web">
+<!ENTITY screengrab.preference.image.name.template.code.domain "domaine de la page web">
+<!ENTITY screengrab.preference.image.name.template.code.domain_without_www "domaine sans « WWW »">
+<!ENTITY screengrab.preference.image.name.template.code.yyyy "numéro de l'année">
+<!ENTITY screengrab.preference.image.name.template.code.yy "deux derniers chiffres de l'année">
+<!ENTITY screengrab.preference.image.name.template.code.mm "numéro du mois (01-12)">
+<!ENTITY screengrab.preference.image.name.template.code.dd "numéro du jour du mois (01-31)">
+<!ENTITY screengrab.preference.image.name.template.code.month "nom du mois">
+<!ENTITY screengrab.preference.image.name.template.code.weekday "jour de la semaine">
+<!ENTITY screengrab.preference.image.name.template.code.h "heures de l'horaire actuel">
+<!ENTITY screengrab.preference.image.name.template.code.m "minutes de l'horaire actuel">
+<!ENTITY screengrab.preference.image.name.template.code.s "secondes de l'horaire actuel">
+<!ENTITY screengrab.preference.image.name.template.code.ut "horodatage de type UNIX">
+<!ENTITY screengrab.preference.image.name.template.disabled.chars.filename "(*) Caractères interdits dans les noms de fichiers : / | \ : * ? ' &quot; &lt; &gt;">
+<!ENTITY screengrab.preference.image.name.template.title.crop "{#TITLE#} - titre complet ; {#TITLE10#} ou {#TITLE30#}, etc... - le titre sera tronqué après le nombre de caractères spécifié">
+<!ENTITY screengrab.preference.replace.char.in.filename "Remplacer les caractères interdits et les espaces par :">
+<!ENTITY screengrab.preference.replace.char.in.filename.space "Espace">
+
+<!ENTITY screengrab.preference.convertumlaute "Conversion de l'Umlaut allemand">
+<!ENTITY screengrab.preference.convertumlaute.description "Conversion de l'Umlaut dans les noms (ä -> ae, ö -> oe ...)">
+<!ENTITY screengrab.preference.onlyascii "Utiliser seulement des caractères ASCII dans les noms de fichiers">
+<!ENTITY screengrab.preference.onlyascii.description "Retirer tous les caractères non ASCII des noms de fichiers">
+<!ENTITY screengrab.preference.image "Image">
+<!ENTITY screengrab.preference.image.insert.text "Insertion de texte dans l'image">
+<!ENTITY screengrab.preference.image.format "Format d'image">
+<!ENTITY screengrab.preference.image.save "Enregistrement">
+<!ENTITY screengrab.preference.image.save.path "Chemin :">
+<!ENTITY screengrab.preference.image.save.quickly "Sauvegarde rapide (sans invite de nom de fichier ni de répertoire)">
+<!ENTITY screengrab.preference.image.select.dir "Parcourir">
+<!ENTITY screengrab.preference.image.save.integrate.download.manager "Intégrer dans le gestionnaire de téléchargements">
+
+<!ENTITY screengrab.preference.image.upload "Téléversement">
+<!ENTITY screengrab.preference.image.upload.disable "Désactiver le téléversement">
+<!ENTITY screengrab.preference.image.upload.link.to.clipboard "Copier le lien de l'image vers le presse-papiers">
+<!ENTITY screengrab.preference.image.upload.storage "Stockage">
+
+<!ENTITY screengrab.preference.notifications "Notifications">
+<!ENTITY screengrab.preference.notifications.bar "Barre de notification">
+<!ENTITY screengrab.preference.notifications.popup "Fenêtre surgissante">
+<!ENTITY screengrab.preference.notifications.statusbar "Barre d'état">
+<!ENTITY screengrab.preference.notifications.off "Désactivées">
+<!ENTITY screengrab.preference.reset "Réinitialiser">
+<!ENTITY screengrab.preference.actions "Actions">
+<!ENTITY screengrab.preference.actions.menu "Menu">
+<!ENTITY screengrab.preference.actions.click.icon "Clic sur l'icône">
+<!ENTITY screengrab.preference.actions.click.arrow "Clic sur la flèche">
+<!ENTITY screengrab.preference.actions.click.middle "Clic milieu">
+<!ENTITY screengrab.preference.actions.click.right "Clic droit">
+<!ENTITY screengrab.preference.actions.show.button.toolbar "Afficher le bouton sur une barre d'outils">
+<!ENTITY screengrab.preference.actions.show.button.toolbar.addon "Afficher le bouton sur la barre des modules">
+<!ENTITY screengrab.preference.actions.show.button.toolbar.disabled "Désactiver le bouton">
+<!ENTITY screengrab.preference.actions.show.button.without.arrow "Afficher le bouton sans la flèche">
+
+<!ENTITY screengrab.preference.hotkeys "Raccourcis clavier">
+<!ENTITY screengrab.preference.hotkeys.not.unique "Cette combinaison de touches existe déjà">
+
+<!ENTITY screengrab.preference.autoscroll.page.top.during.capture "Faire défiler automatiquement vers le haut de la page pendant la capture">
+
+<!ENTITY screengrab.preference.selection "Sélection">
+<!ENTITY screengrab.preference.selection.fast_mode "Mode rapide">

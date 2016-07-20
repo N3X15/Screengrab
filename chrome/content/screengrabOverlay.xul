@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://screengrab/skin/screengrab.css" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://screengrab/locale/screengrab.dtd">
+
+<overlay id="screengrabOverlay" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+	<script type="application/x-javascript" src="chrome://screengrab/content/Header.js" />
+ 	<script type="application/x-javascript" src="chrome://screengrab/content/nsUserSettings.js" />
+	<script type="application/x-javascript" src="chrome://screengrab/content/Box.js" />
+	<script type="application/x-javascript" src="chrome://screengrab/content/Hotkeys.js" />
+	<script type="application/x-javascript" src="chrome://screengrab/content/Prefs.js" />
+	<script type="application/x-javascript" src="chrome://screengrab/content/UndoSet.js" />
+	<script type="application/x-javascript" src="chrome://screengrab/content/File.js" />
+	<script type="application/x-javascript" src="chrome://screengrab/content/Browser.js" />
+	<script type="application/x-javascript" src="chrome://screengrab/content/Document.js" />
+	<script type="application/x-javascript" src="chrome://screengrab/content/Highlighter.js" />
+	<script type="application/x-javascript" src="chrome://screengrab/content/Clipboard.js" />
+	<script type="application/x-javascript" src="chrome://screengrab/content/Selection.js" />
+	<script type="application/x-javascript" src="chrome://screengrab/content/Target.js" />
+	<script type="application/x-javascript" src="chrome://screengrab/content/Capture.js" />
+	<script type="application/x-javascript" src="chrome://screengrab/content/Action.js" />
+	<script type="application/x-javascript" src="chrome://screengrab/content/Grab.js" />
+	<script type="application/x-javascript" src="chrome://screengrab/content/Util.js" />
+	<script type="application/x-javascript" src="chrome://screengrab/content/upload/pho_to_s3.js" />
+	<script type="application/x-javascript" src="chrome://screengrab/content/upload/imgur.js" />
+	<script type="application/x-javascript" src="chrome://screengrab/content/upload/imagebam.js" />
+	<script type="application/x-javascript" src="chrome://screengrab/content/upload/lutim.js" />
+	
+	<!-- stringbundle to localize strings in .js file -->
+	<!-- many thanks to Jean-Bernard Marcon for all the help -->
+	<stringbundleset id="stringbundleset">
+	   <stringbundle id="screengrab-strings" src="chrome://screengrab/locale/screengrab.properties"/>
+	</stringbundleset>
+
+	<toolbarpalette id="BrowserToolbarPalette">
+	    <toolbarbutton id="screengrab-toolbar-button" class="toolbarbutton-1" onclick="sg.SelectAction(event);" type="menu-button" tooltiptext="Screengrab!" label="Screengrab!" context="">
+			<menupopup id="screengrab-toolbar-menupopup" style="display: none" onpopupshowing="sg.Util.clonePopup(event, 'screengrab-menu-items', 'screengrab-toolbar-button')" onpopuphiding="sg.Util.hidingPopup(event, 'screengrab-toolbar-button')" />
+	    </toolbarbutton>
+	</toolbarpalette>
+
+	<stack><keyset id="screengrab_keyset"/></stack>
+
+
+	<!-- Context menu additions -->
+	<popup id="contentAreaContextMenu">
+	    <menuseparator id="screengrab-context-separator"/>
+	    <menu id="screengrab-context-menu" class="menu-iconic" label="&title.label;">
+	        <menupopup id="screengrab-menu-items" onpopupshowing="screengrab.OpenContextMenu();">
+		    	<menu id="screengrab-save" label="&screengrab.save;">
+		    		<menupopup>
+					<menuitem id="screengrab-pop-grabFrame" label="&screengrab.page;" oncommand="sg.Grab(new sg.FrameTarget(), sg.CaptureViewPort, new sg.SaveAction());"/>
+					<menuitem id="screengrab-pop-grabViewPort" label="&screengrab.visible.portion.of.page;" oncommand="sg.Grab(new sg.VisibleTarget(), sg.CaptureViewPort, new sg.SaveAction());"/>
+					<menuitem id="screengrab-pop-grabSelection" label="&screengrab.selection;" oncommand="sg.Grab(new sg.SelectionTarget(), sg.CaptureViewPort, new sg.SaveAction());"/>
+					<!-- menuitem id="screengrab-pop-grabElement" label="&screengrab.element;" oncommand="sg.Grab(new sg.ElementTarget(), sg.CaptureViewPort, new sg.SaveAction());"/ -->
+		            </menupopup>
+		        </menu>
+		        <menu id="screengrab-copy" label="&screengrab.copy;">
+		    		<menupopup>
+					<menuitem id="screengrab-pop-copyFrame" label="&screengrab.page;" oncommand="sg.Grab(new sg.FrameTarget(), sg.CaptureViewPort, new sg.CopyAction());"/>
+					<menuitem id="screengrab-pop-copyViewPort" label="&screengrab.visible.portion.of.page;" oncommand="sg.Grab(new sg.VisibleTarget(), sg.CaptureViewPort, new sg.CopyAction());"/>
+					<menuitem id="screengrab-pop-copySelection" label="&screengrab.selection;" oncommand="sg.Grab(new sg.SelectionTarget(), sg.CaptureViewPort, new sg.CopyAction());"/>
+					<!-- <menuitem id="screengrab-pop-copyElement" label="&screengrab.element;" oncommand="sg.Grab(new sg.ElementTarget(), sg.CaptureViewPort, new sg.CopyAction());"/ -->
+		    		</menupopup>
+		        </menu>
+		        <menu id="screengrab-upload" label="&screengrab.upload;">
+		    		<menupopup>
+					<menuitem id="screengrab-pop-uploadFrame" label="&screengrab.page;" oncommand="sg.Grab(new sg.FrameTarget(), sg.CaptureViewPort, new sg.UploadAction());"/>
+					<menuitem id="screengrab-pop-uploadViewPort" label="&screengrab.visible.portion.of.page;" oncommand="sg.Grab(new sg.VisibleTarget(), sg.CaptureViewPort, new sg.UploadAction());"/>
+					<menuitem id="screengrab-pop-uploadSelection" label="&screengrab.selection;" oncommand="sg.Grab(new sg.SelectionTarget(), sg.CaptureViewPort, new sg.UploadAction());"/>
+					<!-- <menuitem id="screengrab-pop-uploadElement" label="&screengrab.element;" oncommand="sg.Grab(new sg.ElementTarget(), sg.CaptureViewPort, new sg.UploadAction());"/ -->
+		    		</menupopup>
+		        </menu>
+		        <menuseparator/>
+		        <menuitem id="screengrab-use-zoom" label="&screengrab.actions.use.zoom;" type="checkbox" oncommand="sg.UseZoom();" />
+		        <menuitem id="screengrab-preference" label="&screengrab.preference;" oncommand="sg.prefs.openOptions();" tooltiptext="&screengrab.preference.description;" />
+		        <menuitem id="screengrab-open-dir" label="&screengrab.actions.open.dir;" oncommand="sg.OpenDir();" />
+		    </menupopup>
+	    </menu>
+	</popup>
+</overlay>

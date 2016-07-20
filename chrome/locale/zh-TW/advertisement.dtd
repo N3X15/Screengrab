@@ -1,0 +1,19 @@
+<!ENTITY adv_title.label "廣告">
+
+<!ENTITY adv_desc_1.label "親愛的朋友，與我的附加元件 &quot;&title.label;&quot; 的使用者們，我已經在開發這個附加元件上花費了許多的時間：新增功能、修復臭蟲、改進，也包含了所有使用者尋求協助時回答的時間。">
+<!ENTITY adv_desc_2.label "我的附加元件可以透過加入選擇性的廣告到您所參訪的網頁上來支援。透過這個選擇性的廣告可以產生額外的收入，將會對本專案與其他專案未來的的發展有很大的助益。">
+<!ENTITY adv_desc_3.label "廣告將只會在 HTTP 頁面上出現。所以在 HTTPS 頁面中總是會停用（像是銀行頁面、Facebook、Gmail等）。當您使用隱私瀏覽模式時，廣告也會停用。">
+<!ENTITY adv_desc_4.label "您現在可以啟用或停用這些廣告（或是稍後在您的附加元件中設定的廣告分頁裡設定）。您也可以在任何時候關閉您不喜歡的廣告，只要點選在任一個廣告角落的 &quot;?&quot; 按鈕就可以了。">
+<!ENTITY adv_desc_5.label "感謝您的支持，不論您做出任何決定，我都非常感謝！">
+
+<!ENTITY adv_privacy_policy.label "隱私權政策">
+<!ENTITY adv_cancel.label "不，我不想支援您的作品">
+<!ENTITY adv_accept.label "是的，我完全支援作者">
+
+<!ENTITY adv_is_enabled.label "廣告已啟用">
+<!ENTITY adv_is_disabled.label "廣告已停用">
+<!ENTITY adv_customization.label "自訂廣告">
+<!ENTITY adv_change_status.label "變更狀態">
+
+<!ENTITY adv_offer_discount_1.label "您想要取得多於100家線上零售商店的折扣與免費的優惠券嗎？">
+<!ENTITY adv_offer_discount_2.label "建議的廣告 - 是關於最新折扣的小提示，會在您瀏覽特定商家的網站時出現在頁面的頂部。">

@@ -1,0 +1,64 @@
+menu#screengrab-context-menu, menu#screengrab-toolsmenu {
+	list-style-image: url('chrome://screengrab/skin/screengrab_icon.png');
+}
+toolbarbutton#screengrab-toolbar-button {
+  list-style-image: url("chrome://screengrab/skin/screengrab_24_icon.png");
+}
+toolbarbutton#screengrab-toolbar-addon-button {
+  list-style-image: url("chrome://screengrab/skin/screengrab_24_icon.png");
+}
+
+#screengrab-toolbar-button {
+  list-style-image: url("chrome://screengrab/skin/screengrab_icon.png");
+}
+
+#screengrab-toolbar-addon-button {
+  list-style-image: url("chrome://screengrab/skin/screengrab_icon.png");
+}
+
+toolbar[iconsize="small"] #screengrab-toolbar-button {
+  list-style-image: url("chrome://screengrab/skin/screengrab_16_icon.png");
+}
+
+toolbar[iconsize="small"] #screengrab-toolbar-addon-button {
+  list-style-image: url("chrome://screengrab/skin/screengrab_16_icon.png");
+}
+
+caption.prefs {
+	font-weight: bold;
+}
+hbox.prefsActionButton {
+	background: url('chrome://screengrab/skin/screengrab-button-button.png') no-repeat left center;
+	padding-left: 50px;
+}
+hbox.prefsActionArrow {
+	background: url('chrome://screengrab/skin/screengrab-button-arrow.png') no-repeat left center;
+	padding-left: 50px;
+}
+hbox.prefsActionMiddle {
+	background: url('chrome://screengrab/skin/screengrab-button-middle.png') no-repeat left center;
+	padding-left: 50px;
+}
+hbox.prefsActionRight {
+	background: url('chrome://screengrab/skin/screengrab-button-right.png') no-repeat left center;
+	padding-left: 50px;
+}
+#screengrab_prefs_button_minus {
+	list-style-image : url("chrome://screengrab/skin/minus.png");
+	cursor: pointer;
+}
+#screengrab_prefs_button_minus:hover {
+	list-style-image : url("chrome://screengrab/skin/minus_hover.png");
+}
+#screengrab_prefs_button_plus {
+	background: url(chrome://screengrab/skin/plus.png) center no-repeat;
+	background-size: 20px 20px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+#screengrab_prefs_button_plus:hover {
+	background: url(chrome://screengrab/skin/plus_hover.png) center no-repeat;
+	background-size: 20px 20px;
+	border: 1px #ABADB3 solid;
+}

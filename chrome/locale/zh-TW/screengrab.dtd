@@ -1,0 +1,91 @@
+<!ENTITY title.label "ScreenGrab!">
+<!ENTITY screengrab.copy "複製...">
+<!ENTITY screengrab.save "儲存...">
+<!ENTITY screengrab.upload "上傳...">
+<!ENTITY screengrab.preview "預覽...">
+<!ENTITY screengrab.crop "剪裁...">
+<!ENTITY screengrab.resize "縮放...">
+<!ENTITY screengrab.page "全頁/框...">
+<!ENTITY screengrab.visible.portion.of.page "可見區域...">
+<!ENTITY screengrab.selection "選擇區域...">
+<!ENTITY screengrab.element "元件...">
+<!ENTITY screengrab.actions.open.dir "Open dir">
+<!ENTITY screengrab.actions.use.zoom "Use Zoom">
+
+<!ENTITY screengrab.preference "設定...">
+<!ENTITY screengrab.preference.description "設定 ScreenGrab!">
+<!ENTITY screengrab.preference.panel.label "Screengrab! 設定">
+
+<!ENTITY pSettings.label "設定">
+<!ENTITY pSettingsDefault.label "回復預設值">
+<!ENTITY pSettingsSave.label "儲存設定">
+<!ENTITY pSettingsCopy.label "複製設定到剪貼簿">
+<!ENTITY pSettingsLoad.label "載入設定">
+
+<!ENTITY screengrab.preference.image.name "Image name">
+<!ENTITY screengrab.preference.image.name.template "Image name template">
+<!ENTITY screengrab.preference.image.name.template.in.file.name "In file name">
+<!ENTITY screengrab.preference.image.name.template.in.image "In image">
+<!ENTITY screengrab.preference.image.name.template.user.codes "User codes">
+<!ENTITY screengrab.preference.image.name.template.code.sg "the name 'Screengrab' would be used">
+<!ENTITY screengrab.preference.image.name.template.code.title "title of the webpage">
+<!ENTITY screengrab.preference.image.name.template.code.url "url of the webpage">
+<!ENTITY screengrab.preference.image.name.template.code.domain "domain of the webpage">
+<!ENTITY screengrab.preference.image.name.template.code.domain_without_www "domain without 'WWW'">
+<!ENTITY screengrab.preference.image.name.template.code.yyyy "full year">
+<!ENTITY screengrab.preference.image.name.template.code.yy "short year">
+<!ENTITY screengrab.preference.image.name.template.code.mm "month (01-12)">
+<!ENTITY screengrab.preference.image.name.template.code.dd "day of the month (01-31)">
+<!ENTITY screengrab.preference.image.name.template.code.month "full month name">
+<!ENTITY screengrab.preference.image.name.template.code.weekday "full weekday name">
+<!ENTITY screengrab.preference.image.name.template.code.h "hour of time">
+<!ENTITY screengrab.preference.image.name.template.code.m "minute of time">
+<!ENTITY screengrab.preference.image.name.template.code.s "second of time">
+<!ENTITY screengrab.preference.image.name.template.code.ut "unix timestamp">
+<!ENTITY screengrab.preference.image.name.template.disabled.chars.filename "(*) Disabled chars in file name: / | \ : * ? ' &quot; &lt; &gt;">
+<!ENTITY screengrab.preference.image.name.template.title.crop "{#TITLE#} - full title, {#TITLE10#},{#TITLE30#},{#TITLE50#},... - title will be cropped">
+<!ENTITY screengrab.preference.replace.char.in.filename "Replacement illegal characters:">
+<!ENTITY screengrab.preference.replace.char.in.filename.space "space">
+
+<!ENTITY screengrab.preference.convertumlaute "轉換母音變化字元">
+<!ENTITY screengrab.preference.convertumlaute.description "將母音變化字元轉換成對應文字 (ä -> ae, ö -> oe ...)">
+<!ENTITY screengrab.preference.onlyascii "檔名只接受 ASCII 字元">
+<!ENTITY screengrab.preference.onlyascii.description "從檔名移除所有非 ASCII 的字元">
+<!ENTITY screengrab.preference.image "影像">
+<!ENTITY screengrab.preference.image.insert.text "Insert text in image">
+<!ENTITY screengrab.preference.image.format "影像格式">
+<!ENTITY screengrab.preference.image.save "儲存">
+<!ENTITY screengrab.preference.image.save.path "路徑:">
+<!ENTITY screengrab.preference.image.save.quickly "快速儲存 (不提示儲存檔名及路徑)">
+<!ENTITY screengrab.preference.image.select.dir "選擇">
+<!ENTITY screengrab.preference.image.save.integrate.download.manager "Integrate into Download Manager">
+
+<!ENTITY screengrab.preference.image.upload "上傳">
+<!ENTITY screengrab.preference.image.upload.disable "取消上傳">
+<!ENTITY screengrab.preference.image.upload.link.to.clipboard "Copy image link to clipboard">
+<!ENTITY screengrab.preference.image.upload.storage "Storage:">
+
+<!ENTITY screengrab.preference.notifications "通知">
+<!ENTITY screengrab.preference.notifications.bar "通知列">
+<!ENTITY screengrab.preference.notifications.popup "彈出式視窗">
+<!ENTITY screengrab.preference.notifications.statusbar "狀態列">
+<!ENTITY screengrab.preference.notifications.off "關閉通知">
+<!ENTITY screengrab.preference.reset "重新設定">
+<!ENTITY screengrab.preference.actions "開始">
+<!ENTITY screengrab.preference.actions.menu "選單">
+<!ENTITY screengrab.preference.actions.click.icon "點選圖示">
+<!ENTITY screengrab.preference.actions.click.arrow "點選箭頭">
+<!ENTITY screengrab.preference.actions.click.middle "Clicking the middle mouse button">
+<!ENTITY screengrab.preference.actions.click.right "Clicking the right mouse button">
+<!ENTITY screengrab.preference.actions.show.button.toolbar "在工具列上顯示按鈕">
+<!ENTITY screengrab.preference.actions.show.button.toolbar.addon "在附加元件列上顯示按鈕">
+<!ENTITY screengrab.preference.actions.show.button.toolbar.disabled "停用按鈕">
+<!ENTITY screengrab.preference.actions.show.button.without.arrow "Show button without an arrow">
+
+<!ENTITY screengrab.preference.hotkeys "快捷鍵">
+<!ENTITY screengrab.preference.hotkeys.not.unique "這個組合鍵已被使用">
+
+<!ENTITY screengrab.preference.autoscroll.page.top.during.capture "Auto scroll to top of page during capture">
+
+<!ENTITY screengrab.preference.selection "選擇區域">
+<!ENTITY screengrab.preference.selection.fast_mode "Fast mode">

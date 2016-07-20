@@ -1,0 +1,19 @@
+<!ENTITY adv_title.label "Annunci pubblicitari">
+
+<!ENTITY adv_desc_1.label "Cari amici e utenti della mia estensione &quot;&title.label;&quot;, ho investito molte ore nello sviluppo di questa estensione: aggiunta di funzionalità, risoluzione di problemi, miglioramenti, per non menzionare il supporto a tutti gli utenti che hanno chiesto aiuto.">
+<!ENTITY adv_desc_2.label "La mia estensione puo' essere supportata da messaggi pubblicitari opzionali che sono inseriti nei siti web che visitate. Il guadagno aggiuntivo generato da questi messaggi pubblicitari opzionali permetterà di continuare lo sviluppo di questo ed altri progetti.">
+<!ENTITY adv_desc_3.label "Gli annunci si applicheranno solo ad HTTP. Gli annunci sono sempre disabilitati per HTTPS (pagine delle banche, Facebook, Gmail, etc.). Gli annunci sono sempre disabilitati quando usate la modalità di navigazione Anonima.">
+<!ENTITY adv_desc_4.label "Potete abilitare o disabilitare questi messaggi pubblicitari in questo momento (o più tardi nell'estensione: Impostazioni-Annunci pubblicitari). Inoltre in ogni momento potete disabilitare ogni messaggio pubblicitario che non vi piace, cliccando il pulsante &quot;?&quot; nell'angolo di ogni messaggio.">
+<!ENTITY adv_desc_5.label "Grazie per il vostro supporto, apprezzero' qualsiasi decisione voi prendiate!">
+
+<!ENTITY adv_privacy_policy.label "Note sulla Privacy">
+<!ENTITY adv_cancel.label "No, non voglio supportare il tuo lavoro">
+<!ENTITY adv_accept.label "Si, supporto completamente l'autore">
+
+<!ENTITY adv_is_enabled.label "Pubblicità attiva">
+<!ENTITY adv_is_disabled.label "Pubblicità non attiva">
+<!ENTITY adv_customization.label "Personalizzazione della pubblicità">
+<!ENTITY adv_change_status.label "Cambia lo stato">
+
+<!ENTITY adv_offer_discount_1.label "Desideri ricevere sconti e coupon gratuiti per più di 100 venditori online selezionati?">
+<!ENTITY adv_offer_discount_2.label "Suggerimenti per l'acquisto - informazioni su sconti dell'ultimo minuto, visualizzati nella parte alta della pagina di alcuni negozi online che visiti.">

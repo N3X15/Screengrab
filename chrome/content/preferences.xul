@@ -1,0 +1,306 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://browser/skin/preferences/preferences.css"?>
+<?xml-stylesheet href="chrome://screengrab/skin/screengrab.css" type="text/css"?>
+<!DOCTYPE window [
+	<!ENTITY % screengrabDTD SYSTEM "chrome://screengrab/locale/screengrab.dtd" >
+	%screengrabDTD;
+]>
+
+<prefwindow id="scg-pref-window" title="Screengrab Options" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	buttons="accept,cancel,extra2"
+	buttonlabelextra2="&pSettings.label;">
+
+	<script type="application/x-javascript" src="chrome://screengrab/content/PrefsDialog.js" />
+	<script type="application/x-javascript" src="chrome://screengrab/content/Util.js" />
+	<script type="application/x-javascript" src="chrome://screengrab/content/Hotkeys.js" />
+
+	<stringbundleset id="stringbundleset">
+		<stringbundle id="screengrab-strings" src="chrome://screengrab/locale/screengrab.properties"/>
+	</stringbundleset>
+
+	<popupset>
+		<menupopup id="screengrab_settings_popup">
+			<menuitem id="screengrab_settings_save" label="&pSettingsSave.label;" oncommand="screengrab.saveSettings('save');" />
+			<menuitem id="screengrab_settings_copy" label="&pSettingsCopy.label;" oncommand="screengrab.saveSettings('copy');" />
+			<menuitem id="screengrab_settings_load" label="&pSettingsLoad.label;" oncommand="screengrab.loadSettings();" />
+			<menuitem id="screengrab_settings_defaults" label="&pSettingsDefault.label;" oncommand="screengrab.defaultSettings();" />
+		</menupopup>
+	</popupset>
+
+	<prefpane id="scg-pref-pane" label="&screengrab.preference.panel.label;">
+		<preferences>
+	    		<preference id="prefNotifyTypeSave" name="extensions.screengrab.notifyTypeSave" type="int" />
+		    	<preference id="prefNotifyTypeUpload" name="extensions.screengrab.notifyTypeUpload" type="int" />
+
+	    		<preference id="prefTemplateFileName" name="extensions.screengrab.templateFileName" type="string" />
+	    		<preference id="prefTemplateImageName" name="extensions.screengrab.templateImageName" type="string" />
+
+		    	<preference id="prefConvertUmlaute" name="extensions.screengrab.convertumlaute" type="bool" />
+		    	<preference id="prefOnlyAscii" name="extensions.screengrab.onlyascii" type="bool" />
+	    		<preference id="prefImageFormat" name="extensions.screengrab.imageFormat" type="int" />
+	    		<preference id="prefJpgImageQuality" name="extensions.screengrab.jpgImageQuality" type="int" />
+	    		<preference id="prefDefaultSaveDir" name="extensions.screengrab.defaultSaveDir" type="string" />
+	    		<preference id="prefQuicklySave" name="extensions.screengrab.quicklySave" type="bool" />
+	    		<preference id="prefDisableUpload" name="extensions.screengrab.disableUpload" type="bool" />
+	    		<preference id="prefButtonClickIconGeneral" name="extensions.screengrab.buttonClickIconGeneral" type="string" />
+	    		<preference id="prefButtonClickIconAdditional" name="extensions.screengrab.buttonClickIconAdditional" type="string" />
+	    		<preference id="prefButtonClickArrowGeneral" name="extensions.screengrab.buttonClickArrowGeneral" type="string" />
+	    		<preference id="prefButtonClickArrowAdditional" name="extensions.screengrab.buttonClickArrowAdditional" type="string" />
+	    		<preference id="prefButtonClickMiddleGeneral" name="extensions.screengrab.buttonClickMiddleGeneral" type="string" />
+	    		<preference id="prefButtonClickMiddleAdditional" name="extensions.screengrab.buttonClickMiddleAdditional" type="string" />
+	    		<preference id="prefButtonClickRightGeneral" name="extensions.screengrab.buttonClickRightGeneral" type="string" />
+	    		<preference id="prefButtonClickRightAdditional" name="extensions.screengrab.buttonClickRightAdditional" type="string" />
+	    		<preference id="prefShowButtonInToolbar" name="extensions.screengrab.showButtonInToolbar" type="string" />
+	    		<preference id="prefShowButtonWithoutArrow" name="extensions.screengrab.showButtonWithoutArrow" type="bool" />
+	    		<preference id="prefInsertTextInImage" name="extensions.screengrab.insertTextInImage" type="bool" />
+	    		<preference id="prefIntegrateIntoDownloadManager" name="extensions.screengrab.integrateIntoDownloadManager" type="bool" />
+	    		<preference id="prefReplaceCharInFilename" name="extensions.screengrab.replaceCharInFilename" type="string" />
+	    		<preference id="prefUploadLinkToClipboard" name="extensions.screengrab.uploadLinkToClipboard" type="bool" />
+	    		<preference id="prefUploadStorage" name="extensions.screengrab.uploadStorage" type="string" />
+	    		<preference id="prefHotkeys" name="extensions.screengrab.hotkeys" type="string" />
+	    		<preference id="prefAutoScrollToTop" name="extensions.screengrab.autoScrollToTop" type="bool" />
+	    		<preference id="prefSelectionFastMode" name="extensions.screengrab.selection.fastMode" type="bool" />
+		</preferences>
+
+		<tabbox>
+			<tabs>
+				<tab label="&screengrab.preference.image.name;"/>
+				<tab label="&screengrab.preference.image.save;"/>
+				<tab label="&screengrab.preference.image.upload;"/>
+				<tab label="&screengrab.preference.notifications;"/>
+				<tab label="&screengrab.preference.image;"/>
+				<tab label="&screengrab.preference.actions;"/>
+			</tabs>
+			<tabpanels>
+
+				<tabpanel id="imagenameTab">
+					<vbox flex="2">
+					<groupbox flex="2">
+						<caption class="prefs" label="&screengrab.preference.image.name.template;"/>
+						<grid>
+							<columns>
+								<column/>
+								<column flex="1"/>
+							</columns>
+							<rows>
+							<row align="center"><label class="text-link" style="text-decoration: underline;" onclick="screengrab.setDefaultFileName();" value="&screengrab.preference.image.name.template.in.file.name; *:"/><textbox preference="prefTemplateFileName" id="templateFileName" flex="1" /></row>
+							<row align="center"><label class="text-link" style="text-decoration: underline;" onclick="screengrab.setDefaultImageName();" value="&screengrab.preference.image.name.template.in.image;:"/><textbox preference="prefTemplateImageName" id="templateImageName" flex="1" /></row>
+							<row align="top"><label value="&screengrab.preference.image.name.template.user.codes;:"/>
+								<vbox>
+								<hbox flex="1" style="color: #FF3B3B;">
+									<vbox>
+										<hbox><textbox flex="1" clickSelectsAll="true" style="color: #FF3B3B;" readonly="true" size="6" class="plain  monospace" value="{#SG#}"/><label value=" - &screengrab.preference.image.name.template.code.sg;"/></hbox>
+										<hbox><textbox flex="1" clickSelectsAll="true" style="color: #FF3B3B;" readonly="true" size="9" class="plain monospace" value="{#TITLE#}"/><label value=" - &screengrab.preference.image.name.template.code.title;"/></hbox>
+										<hbox><textbox flex="1" clickSelectsAll="true" style="color: #FF3B3B;" readonly="true" size="7" class="plain monospace" value="{#URL#}"/><label value=" - &screengrab.preference.image.name.template.code.url;"/></hbox>
+										<hbox><textbox flex="1" clickSelectsAll="true" style="color: #FF3B3B;" readonly="true" size="10" class="plain monospace" value="{#DOMAIN#}"/><label value=" - &screengrab.preference.image.name.template.code.domain;"/></hbox>
+										<hbox><textbox flex="1" clickSelectsAll="true" style="color: #FF3B3B;" readonly="true" size="14" class="plain monospace" value="{#DOMAIN!WWW#}"/><label value=" - &screengrab.preference.image.name.template.code.domain_without_www;"/></hbox>
+									</vbox>
+									<vbox width="20"><spacer flex="1"/></vbox>
+									<vbox>
+										<hbox><textbox flex="1" clickSelectsAll="true" style="color: #FF3B3B;" readonly="true" size="8" class="plain monospace" value="{#YYYY#}"/><label value=" - &screengrab.preference.image.name.template.code.yyyy;"/></hbox>
+										<hbox><textbox flex="1" clickSelectsAll="true" style="color: #FF3B3B;" readonly="true" size="6" class="plain monospace" value="{#YY#}"/><label value=" - &screengrab.preference.image.name.template.code.yy;"/></hbox>
+										<hbox><textbox flex="1" clickSelectsAll="true" style="color: #FF3B3B;" readonly="true" size="6" class="plain monospace" value="{#MM#}"/><label value=" - &screengrab.preference.image.name.template.code.mm;"/></hbox>
+										<hbox><textbox flex="1" clickSelectsAll="true" style="color: #FF3B3B;" readonly="true" size="6" class="plain monospace" value="{#DD#}"/><label value=" - &screengrab.preference.image.name.template.code.dd;"/></hbox>
+										<hbox><textbox flex="1" clickSelectsAll="true" style="color: #FF3B3B;" readonly="true" size="9" class="plain monospace" value="{#MONTH#}"/><label value=" - &screengrab.preference.image.name.template.code.month;"/></hbox>
+										<hbox><textbox flex="1" clickSelectsAll="true" style="color: #FF3B3B;" readonly="true" size="11" class="plain monospace" value="{#WEEKDAY#}"/><label value=" - &screengrab.preference.image.name.template.code.weekday;"/></hbox>
+										<hbox><textbox flex="1" clickSelectsAll="true" style="color: #FF3B3B;" readonly="true" size="5" class="plain monospace" value="{#H#}"/><label value=" - &screengrab.preference.image.name.template.code.h;"/></hbox>
+										<hbox><textbox flex="1" clickSelectsAll="true" style="color: #FF3B3B;" readonly="true" size="5" class="plain monospace" value="{#M#}"/><label value=" - &screengrab.preference.image.name.template.code.m;"/></hbox>
+										<hbox><textbox flex="1" clickSelectsAll="true" style="color: #FF3B3B;" readonly="true" size="5" class="plain monospace" value="{#S#}"/><label value=" - &screengrab.preference.image.name.template.code.s;"/></hbox>
+										<hbox><textbox flex="1" clickSelectsAll="true" style="color: #FF3B3B;" readonly="true" size="6" class="plain monospace" value="{#UT#}"/><label value=" - &screengrab.preference.image.name.template.code.ut;"/></hbox>
+									</vbox>
+								</hbox>
+								</vbox>
+							</row>
+							</rows>
+						</grid>
+						<vbox>
+						<label style="color: #FF3B3B;" value="&screengrab.preference.image.name.template.disabled.chars.filename;"/>
+						<label style="color: #FF3B3B;" value="&screengrab.preference.image.name.template.title.crop;"/>
+						</vbox>
+					</groupbox>
+					<groupbox flex="2">
+						<vbox>
+							<hbox align="center">
+								<checkbox preference="prefOnlyAscii" id="onlyascii" tooltip="onlyAsciiTip" label="&screengrab.preference.onlyascii;" />
+								<spacer flex="1"/>
+								<label value="&screengrab.preference.replace.char.in.filename;"/>
+								<menulist preference="prefReplaceCharInFilename" id="replaceCharInFilename">
+									<menupopup>
+									<menuitem label="_" value="_"/>
+									<menuitem label="-" value="-"/>
+									<menuitem label="." value="."/>
+									<menuitem label="&screengrab.preference.replace.char.in.filename.space;" value=" "/>
+									</menupopup>
+								</menulist>
+							</hbox>
+							<checkbox preference="prefConvertUmlaute" id="convertumlaute" tooltip="convertUmlauteTip" label="&screengrab.preference.convertumlaute;"/>
+							<checkbox preference="prefInsertTextInImage" id="insertTextInImage" label="&screengrab.preference.image.insert.text;"/>
+						</vbox>
+					</groupbox>
+					</vbox>
+				</tabpanel>
+
+				<tabpanel id="saveTab">
+					<groupbox align="left" flex="2">
+						<label value="&screengrab.preference.image.save.path;"/>
+						<hbox align="center">
+							<textbox disabled="true" preference="prefDefaultSaveDir" id="defaultSaveDir" size="50" />
+							<button label="&screengrab.preference.image.select.dir;" oncommand="screengrab.selectDir();"/>
+							<button label="&screengrab.preference.reset;" oncommand="screengrab.resetDir();"/>
+						</hbox>
+						<separator />
+						<checkbox preference="prefQuicklySave" id="quicklySave" label="&screengrab.preference.image.save.quickly;"/>
+						<checkbox preference="prefIntegrateIntoDownloadManager" id="integrateIntoDownloadManager" label="&screengrab.preference.image.save.integrate.download.manager;"/>
+						<checkbox preference="prefAutoScrollToTop" id="autoScrollToTop" label="&screengrab.preference.autoscroll.page.top.during.capture;"/>
+					</groupbox>
+				</tabpanel>
+				<tabpanel id="uploadTab">
+					<vbox flex="1">
+					<checkbox preference="prefDisableUpload" id="disableUpload" oncommand="screengrab.changeDisableUpload(this.checked)" label="&screengrab.preference.image.upload.disable;"/>
+					<groupbox align="left">
+						<caption class="prefs"><label value="&screengrab.preference.image.upload.storage;" id="uploadStorageLabel"/></caption>
+						<radiogroup id="uploadStorage" preference="prefUploadStorage">
+							<radio label="http://share.pho.to/  + s3blog.org" value="s3blog.org"/>
+							<radio label="http://share.pho.to/" value="share.pho.to"/>
+							<radio label="https://imgur.com/" value="imgur.com"/>
+							<radio label="http://imagebam.com/" value="imagebam.com"/>
+							<radio label="https://lut.im/" value="lut.im"/>
+						</radiogroup>
+					</groupbox>
+					<groupbox align="left">
+						<checkbox preference="prefUploadLinkToClipboard" id="uploadClipboardLink"  label="&screengrab.preference.image.upload.link.to.clipboard;"/>
+					</groupbox>
+					</vbox>
+				</tabpanel>
+				<tabpanel id="notificationsTab">
+					<groupbox align="left" flex="2">
+						<vbox>
+							<hbox width="100%" flex="2">
+							<vbox>
+							<label value="&screengrab.save;"/>
+							<radiogroup id="notifyTypeSave" preference="prefNotifyTypeSave">
+								<radio label="&screengrab.preference.notifications.bar;" value="1"/>
+								<radio label="&screengrab.preference.notifications.statusbar;" value="3"/>
+								<radio label="&screengrab.preference.notifications.popup;" value="2"/>
+								<radio label="&screengrab.preference.notifications.off;" value="0"/>
+							</radiogroup>
+							</vbox>
+							<vbox width="20"><spacer flex="1"/></vbox>
+							<vbox>
+							<label value="&screengrab.upload;"/>
+							<radiogroup id="notifyTypeUpload" preference="prefNotifyTypeUpload">
+								<radio label="&screengrab.preference.notifications.bar;" value="1"/>
+								<radio label="&screengrab.preference.notifications.statusbar;" value="3"/>
+								<radio label="&screengrab.preference.notifications.popup;" value="2"/>
+							</radiogroup>
+							</vbox>
+							</hbox>
+						</vbox>
+					</groupbox>
+				</tabpanel>
+				<tabpanel id="imageTab">
+					<vbox flex="2">
+					<groupbox>
+						<caption class="prefs" label="&screengrab.preference.image.format;"/>
+						<radiogroup id="imageFormat" preference="prefImageFormat">
+					    	<vbox>
+							<hbox><radio id="usePng" label="PNG" value="0"/></hbox>
+							<hbox align="center"><radio id="useJpeg" label="JPEG" value="1"/>
+								<scale id="jpgImageQuality" min="1" value="70" max="100"/>
+								<label id="jpgImageQuality_label" value=""/>
+								<button label="&screengrab.preference.reset;" oncommand="screengrab.changeJpgImageQuality(70);"/>
+							</hbox>
+							<hbox><radio id="useBmp" label="BMP" value="2"/></hbox>
+		    				</vbox>
+						</radiogroup>
+					</groupbox>
+
+					<groupbox>
+						<caption class="prefs" label="&screengrab.preference.selection;"/>
+						<checkbox preference="prefSelectionFastMode" label="&screengrab.preference.selection.fast_mode;"/>
+					</groupbox>
+	    				</vbox>
+				</tabpanel>
+				<tabpanel id="actionsTab">
+					<popupset>
+						<menupopup id="menuActionGeneral">
+							<menuitem label="&screengrab.preference.actions.menu;" id="menuActionMenu" value="menu"/>
+							<menuitem label="&screengrab.save;" value="save"/>
+							<menuitem label="&screengrab.copy;" value="copy"/>
+							<menuitem label="&screengrab.upload;" value="upload" id="menuActionUpload"/>
+						</menupopup>
+						<menupopup id="menuActionAdditional">
+							<menuitem label="&screengrab.page;" value="page"/>
+							<menuitem label="&screengrab.visible.portion.of.page;" value="visible.page"/>
+							<menuitem label="&screengrab.selection;" value="selection"/>
+						</menupopup>
+					</popupset>
+					<stack id="screengrab_hotkeys_template" hidden="true">
+						<vbox id="screengrab_hotkeys_vbox">
+						<hbox align="center" flex="1" minheight="24" id="screengrab_hotkeys_hbox">
+							<toolbarbutton id="screengrab_prefs_button_minus" oncommand="screengrab.hotkey_minus(this);"/>
+							<textbox id="screengrab_hotkeys_textbox" width="200" onclick="this.select();" onkeypress="screengrab.hotkey_input(event, this);" />
+							<spacer flex="1"/>
+							<menulist id="screengrab_hotkeys_list_general" oncommand="screengrab.hotkey_set_pref();"/>
+							<menulist id="screengrab_hotkeys_list_additional" oncommand="screengrab.hotkey_set_pref();"/>
+						</hbox>
+						<hbox id="screengrab_hotkeys_not_unique" style="color: red;" hidden="true">
+							<label value="&screengrab.preference.hotkeys.not.unique;"/><label id="screengrab_hotkeys_not_unique_text" /><spacer flex="1"/>
+						</hbox>
+						</vbox>
+					</stack>
+
+					<vbox flex="2">
+					<groupbox>
+		    				<vbox>
+					        <radiogroup id="showButtonInToolbar" preference="prefShowButtonInToolbar">
+						    	<radio label="&screengrab.preference.actions.show.button.toolbar;" value="toolbar"/>
+						    	<radio label="&screengrab.preference.actions.show.button.toolbar.addon;" id="show_button_toolbar_addon" value="addonbar"/>
+						    	<radio label="&screengrab.preference.actions.show.button.toolbar.disabled;" value="disabled"/>
+						</radiogroup>
+						<checkbox preference="prefShowButtonWithoutArrow" id="showButtonWithoutArrow"  label="&screengrab.preference.actions.show.button.without.arrow;"/>
+		    				</vbox>
+					</groupbox>
+					<groupbox>
+						<hbox align="center" flex="1" class="prefsActionButton" minheight="24">
+							<label value="&screengrab.preference.actions.click.icon;"/>
+							<spacer flex="1"/>
+							<menulist preference="prefButtonClickIconGeneral" id="buttonClickIconGeneral" oncommand="screengrab.changeActionsGeneral('buttonClickIconGeneral', 'buttonClickIconAdditional');" />
+							<menulist preference="prefButtonClickIconAdditional" id="buttonClickIconAdditional" />
+						</hbox>
+					</groupbox>
+					<groupbox>
+						<hbox align="center" flex="1" class="prefsActionArrow" minheight="24">
+							<label value="&screengrab.preference.actions.click.arrow;"/>
+							<spacer flex="1"/>
+							<menulist preference="prefButtonClickArrowGeneral" id="buttonClickArrowGeneral" oncommand="screengrab.changeActionsGeneral('buttonClickArrowGeneral', 'buttonClickArrowAdditional');" />
+							<menulist preference="prefButtonClickArrowAdditional" id="buttonClickArrowAdditional" />
+						</hbox>
+					</groupbox>
+					<groupbox>
+						<hbox align="center" flex="1" class="prefsActionMiddle" minheight="24">
+							<label value="&screengrab.preference.actions.click.middle;"/>
+							<spacer flex="1"/>
+							<menulist preference="prefButtonClickMiddleGeneral" id="buttonClickMiddleGeneral" oncommand="screengrab.changeActionsGeneral('buttonClickMiddleGeneral', 'buttonClickMiddleAdditional');" />
+							<menulist preference="prefButtonClickMiddleAdditional" id="buttonClickMiddleAdditional" />
+						</hbox>
+					</groupbox>
+					<groupbox>
+						<hbox align="center" flex="1" class="prefsActionRight" minheight="24">
+							<label value="&screengrab.preference.actions.click.right;"/>
+							<spacer flex="1"/>
+							<menulist preference="prefButtonClickRightGeneral" id="buttonClickRightGeneral" oncommand="screengrab.changeActionsGeneral('buttonClickRightGeneral', 'buttonClickRightAdditional');" />
+							<menulist preference="prefButtonClickRightAdditional" id="buttonClickRightAdditional" />
+						</hbox>
+					</groupbox>
+					<groupbox>
+						<caption class="prefs"><hbox align="center"><hbox id="screengrab_prefs_button_plus" onclick="screengrab.hotkey_plus();"/><label value="&screengrab.preference.hotkeys;"/></hbox></caption>
+						<vbox id="screengrab_hotkeys_list"/>
+					</groupbox>
+					</vbox>
+				</tabpanel>
+			</tabpanels>
+		</tabbox>
+	</prefpane>
+</prefwindow>

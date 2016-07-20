@@ -1,0 +1,19 @@
+﻿<!ENTITY adv_title.label "Reklama">
+
+<!ENTITY adv_desc_1.label "Drahí priatelia a používatelia môjho doplnku &quot;&title.label;&quot;. V procese vývoja tohto doplnku som do neho investoval mnoho hodín: pridávaním vlastností, opravou chýb, zlepšovaním, nespomínajúc podporu všetkých tých používateľov, ktorí vyžadovali pomoc.">
+<!ENTITY adv_desc_2.label "Môj doplnok môže byť podporovaný voliteľnými reklamami, ktoré budú pridané na stránky, ktoré navštívite. Príjem generovaný z reklám bude využitý pri ďalšom vývoji tohto a iných projektov.">
+<!ENTITY adv_desc_3.label "Reklama sa použije iba pri HTTP. Vždy je vypnutá pri HTTPS (bankové stránky, Facebook, Gmail, atď.). Reklama je vždy zakázaná keď používate režim Súkromné prehliadanie.">
+<!ENTITY adv_desc_4.label "Môžete povoliť alebo zakázať tieto reklamy teraz (alebo neskôr v Rozšíreniach: Možnosti-Reklama). Tiež môžete vypnúť akúkoľvek nechcenú reklamu kliknutím na tlačidlo &quot;?&quot; v rohu každej reklamy.">
+<!ENTITY adv_desc_5.label "Vďaka za Vašu podporu, oceňujem akékoľvek Vaše rozhodnutie!">
+
+<!ENTITY adv_privacy_policy.label "Ochrana súkromia">
+<!ENTITY adv_cancel.label "Nie, nechcem podporiť Vašu prácu">
+<!ENTITY adv_accept.label "Áno, plne podporujem autora">
+
+<!ENTITY adv_is_enabled.label "Reklama je povolená">
+<!ENTITY adv_is_disabled.label "Reklama je zakázaná">
+<!ENTITY adv_customization.label "Prispôsobenie reklamy">
+<!ENTITY adv_change_status.label "Zmena stavu">
+
+<!ENTITY adv_offer_discount_1.label "Chcete získať zľavy a kupóny zadarmo od viac ako 100 hlavných online predajcov?">
+<!ENTITY adv_offer_discount_2.label "Odporúčané reklamy - sú malé tipy na aktuálne rabaty zobrazované navrchu stránky pre konkrétne obchody, ktoré navštívite.">

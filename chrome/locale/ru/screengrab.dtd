@@ -1,0 +1,91 @@
+<!ENTITY title.label "ScreenGrab!">
+<!ENTITY screengrab.copy "Скопировать...">
+<!ENTITY screengrab.save "Сохранить...">
+<!ENTITY screengrab.upload "Upload...">
+<!ENTITY screengrab.preview "Просмотр...">
+<!ENTITY screengrab.crop "Вырезать...">
+<!ENTITY screengrab.resize "Изменить размер...">
+<!ENTITY screengrab.page "Всю страницу/Фрейм...">
+<!ENTITY screengrab.visible.portion.of.page "Видимую часть...">
+<!ENTITY screengrab.selection "Выделение...">
+<!ENTITY screengrab.element "Element...">
+<!ENTITY screengrab.actions.open.dir "Открыть папку сохранения">
+<!ENTITY screengrab.actions.use.zoom "Использовать Zoom">
+
+<!ENTITY screengrab.preference "Настройки...">
+<!ENTITY screengrab.preference.description "Настройки для ScreenGrab!">
+<!ENTITY screengrab.preference.panel.label "Screengrab! Настройки">
+
+<!ENTITY pSettings.label "Настройки">
+<!ENTITY pSettingsDefault.label "Восстановить настройки по умолчанию">
+<!ENTITY pSettingsSave.label "Сохранить настройки">
+<!ENTITY pSettingsCopy.label "Скопировать настройки">
+<!ENTITY pSettingsLoad.label "Загрузить настройки">
+
+<!ENTITY screengrab.preference.image.name "Имя картинки">
+<!ENTITY screengrab.preference.image.name.template "Шаблоны имени изображения">
+<!ENTITY screengrab.preference.image.name.template.in.file.name "Для имени файла">
+<!ENTITY screengrab.preference.image.name.template.in.image "В картинке">
+<!ENTITY screengrab.preference.image.name.template.user.codes "Описание кодов">
+<!ENTITY screengrab.preference.image.name.template.code.sg "добавить 'Screengrab'">
+<!ENTITY screengrab.preference.image.name.template.code.title "заголовок web-сайта">
+<!ENTITY screengrab.preference.image.name.template.code.url "url web-сайта">
+<!ENTITY screengrab.preference.image.name.template.code.domain "домен web-сайта">
+<!ENTITY screengrab.preference.image.name.template.code.domain_without_www "домен без 'WWW'">
+<!ENTITY screengrab.preference.image.name.template.code.yyyy "год (4 цифры)">
+<!ENTITY screengrab.preference.image.name.template.code.yy "год (2 цифры)">
+<!ENTITY screengrab.preference.image.name.template.code.mm "месяц (01-12)">
+<!ENTITY screengrab.preference.image.name.template.code.dd "день месяца (01-31)">
+<!ENTITY screengrab.preference.image.name.template.code.month "название месяца">
+<!ENTITY screengrab.preference.image.name.template.code.weekday "день недели">
+<!ENTITY screengrab.preference.image.name.template.code.h "часы">
+<!ENTITY screengrab.preference.image.name.template.code.m "минуты">
+<!ENTITY screengrab.preference.image.name.template.code.s "секунды">
+<!ENTITY screengrab.preference.image.name.template.code.ut "unix-время">
+<!ENTITY screengrab.preference.image.name.template.disabled.chars.filename "(*) Запрещенные символы в имени файла: / | \ : * ? ' &quot; &lt; &gt;">
+<!ENTITY screengrab.preference.image.name.template.title.crop "{#TITLE#} - весь заголовок, {#TITLE10#},{#TITLE30#},{#TITLE50#},... - заголовок будет обрезан">
+<!ENTITY screengrab.preference.replace.char.in.filename "Замена запрещенных символов:">
+<!ENTITY screengrab.preference.replace.char.in.filename.space "пробел">
+
+<!ENTITY screengrab.preference.convertumlaute "Конвертировать немецкие буквы">
+<!ENTITY screengrab.preference.convertumlaute.description "Конвертировать немецкие буквы в имени файла (ä -> ae, ö -> oe ...)">
+<!ENTITY screengrab.preference.onlyascii "Только ascii-символы в имени файла">
+<!ENTITY screengrab.preference.onlyascii.description "Удалить все не ascii-символы в имени файла">
+<!ENTITY screengrab.preference.image "Изображение">
+<!ENTITY screengrab.preference.image.insert.text "Вставить текст в картинку">
+<!ENTITY screengrab.preference.image.format "Формат картинки">
+<!ENTITY screengrab.preference.image.save "Сохранение">
+<!ENTITY screengrab.preference.image.save.path "Путь:">
+<!ENTITY screengrab.preference.image.save.quickly "Быстрое сохранение (без запроса имени файла и директории)">
+<!ENTITY screengrab.preference.image.select.dir "Обзор">
+<!ENTITY screengrab.preference.image.save.integrate.download.manager "Интегрировать в Менеджер Закачек">
+
+<!ENTITY screengrab.preference.image.upload "Upload">
+<!ENTITY screengrab.preference.image.upload.disable "Отключить Upload">
+<!ENTITY screengrab.preference.image.upload.link.to.clipboard "Скопировать ссылку на картинку в буфер обмена">
+<!ENTITY screengrab.preference.image.upload.storage "Хранилище:">
+
+<!ENTITY screengrab.preference.notifications "Уведомления">
+<!ENTITY screengrab.preference.notifications.bar "Панель уведомлений">
+<!ENTITY screengrab.preference.notifications.popup "Всплывающее уведомление">
+<!ENTITY screengrab.preference.notifications.statusbar "Панель состояния">
+<!ENTITY screengrab.preference.notifications.off "Отключено">
+<!ENTITY screengrab.preference.reset "Сброс">
+<!ENTITY screengrab.preference.actions "Действия">
+<!ENTITY screengrab.preference.actions.menu "Меню">
+<!ENTITY screengrab.preference.actions.click.icon "Нажатие на картинку">
+<!ENTITY screengrab.preference.actions.click.arrow "Нажатие на стрелку">
+<!ENTITY screengrab.preference.actions.click.middle "Нажатие на среднюю кнопку мыши">
+<!ENTITY screengrab.preference.actions.click.right "Нажатие на правую кнопку мыши">
+<!ENTITY screengrab.preference.actions.show.button.toolbar "Показать кнопку на панели инструментов">
+<!ENTITY screengrab.preference.actions.show.button.toolbar.addon "Показать кнопку на панели дополнений">
+<!ENTITY screengrab.preference.actions.show.button.toolbar.disabled "Отключить кнопку">
+<!ENTITY screengrab.preference.actions.show.button.without.arrow "Показывать кнопку без стрелки">
+
+<!ENTITY screengrab.preference.hotkeys "Горячие клавиши">
+<!ENTITY screengrab.preference.hotkeys.not.unique "Такая комбинация клавиш уже существует">
+
+<!ENTITY screengrab.preference.autoscroll.page.top.during.capture "Авто-прокрутка к началу страницы во время захвата">
+
+<!ENTITY screengrab.preference.selection "Выделение">
+<!ENTITY screengrab.preference.selection.fast_mode "Быстрый режим">

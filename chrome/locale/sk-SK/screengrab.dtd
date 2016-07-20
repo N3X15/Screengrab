@@ -1,0 +1,91 @@
+<!ENTITY title.label "ScreenGrab!">
+<!ENTITY screengrab.copy "Kopírovať...">
+<!ENTITY screengrab.save "Uložiť...">
+<!ENTITY screengrab.upload "Upload...">
+<!ENTITY screengrab.preview "Ukážka...">
+<!ENTITY screengrab.crop "Orezať...">
+<!ENTITY screengrab.resize "Zmeniť veľkosť...">
+<!ENTITY screengrab.page "Celá stránka/Rámec...">
+<!ENTITY screengrab.visible.portion.of.page "Viditeľná časť...">
+<!ENTITY screengrab.selection "Výber...">
+<!ENTITY screengrab.element "Element...">
+<!ENTITY screengrab.actions.open.dir "Open dir">
+<!ENTITY screengrab.actions.use.zoom "Use Zoom">
+
+<!ENTITY screengrab.preference "Settings...">
+<!ENTITY screengrab.preference.description "Settings for ScreenGrab!">
+<!ENTITY screengrab.preference.panel.label "Nastavenie ScreenGrab!">
+
+<!ENTITY pSettings.label "Nastavenia">
+<!ENTITY pSettingsDefault.label "Obnoviť predvolené">
+<!ENTITY pSettingsSave.label "Uložiť nastavenia">
+<!ENTITY pSettingsCopy.label "Skopírovať nastavenia do schránky">
+<!ENTITY pSettingsLoad.label "Načítať nastavenia">
+
+<!ENTITY screengrab.preference.image.name "Image name">
+<!ENTITY screengrab.preference.image.name.template "Image name template">
+<!ENTITY screengrab.preference.image.name.template.in.file.name "In file name">
+<!ENTITY screengrab.preference.image.name.template.in.image "In image">
+<!ENTITY screengrab.preference.image.name.template.user.codes "User codes">
+<!ENTITY screengrab.preference.image.name.template.code.sg "the name 'Screengrab' would be used">
+<!ENTITY screengrab.preference.image.name.template.code.title "title of the webpage">
+<!ENTITY screengrab.preference.image.name.template.code.url "url of the webpage">
+<!ENTITY screengrab.preference.image.name.template.code.domain "domain of the webpage">
+<!ENTITY screengrab.preference.image.name.template.code.domain_without_www "domain without 'WWW'">
+<!ENTITY screengrab.preference.image.name.template.code.yyyy "full year">
+<!ENTITY screengrab.preference.image.name.template.code.yy "short year">
+<!ENTITY screengrab.preference.image.name.template.code.mm "month (01-12)">
+<!ENTITY screengrab.preference.image.name.template.code.dd "day of the month (01-31)">
+<!ENTITY screengrab.preference.image.name.template.code.month "full month name">
+<!ENTITY screengrab.preference.image.name.template.code.weekday "full weekday name">
+<!ENTITY screengrab.preference.image.name.template.code.h "hour of time">
+<!ENTITY screengrab.preference.image.name.template.code.m "minute of time">
+<!ENTITY screengrab.preference.image.name.template.code.s "second of time">
+<!ENTITY screengrab.preference.image.name.template.code.ut "unix timestamp">
+<!ENTITY screengrab.preference.image.name.template.disabled.chars.filename "(*) Disabled chars in file name: / | \ : * ? ' &quot; &lt; &gt;">
+<!ENTITY screengrab.preference.image.name.template.title.crop "{#TITLE#} - full title, {#TITLE10#},{#TITLE30#},{#TITLE50#},... - title will be cropped">
+<!ENTITY screengrab.preference.replace.char.in.filename "Replacement illegal characters:">
+<!ENTITY screengrab.preference.replace.char.in.filename.space "space">
+
+<!ENTITY screengrab.preference.convertumlaute "Convert German Umlaute">
+<!ENTITY screengrab.preference.convertumlaute.description "Convert German Umlaute in filename (ä -> ae, ö -> oe ...)">
+<!ENTITY screengrab.preference.onlyascii "Only ascii-character in filename">
+<!ENTITY screengrab.preference.onlyascii.description "Remove all non-ascii-character from filename">
+<!ENTITY screengrab.preference.image "Image">
+<!ENTITY screengrab.preference.image.insert.text "Insert text in image">
+<!ENTITY screengrab.preference.image.format "Formát obrázka">
+<!ENTITY screengrab.preference.image.save "Save">
+<!ENTITY screengrab.preference.image.save.path "Path:">
+<!ENTITY screengrab.preference.image.save.quickly "Quickly save (without prompt to filename and dir)">
+<!ENTITY screengrab.preference.image.select.dir "Select">
+<!ENTITY screengrab.preference.image.save.integrate.download.manager "Integrate into Download Manager">
+
+<!ENTITY screengrab.preference.image.upload "Upload">
+<!ENTITY screengrab.preference.image.upload.disable "Disable Upload">
+<!ENTITY screengrab.preference.image.upload.link.to.clipboard "Copy image link to clipboard">
+<!ENTITY screengrab.preference.image.upload.storage "Storage:">
+
+<!ENTITY screengrab.preference.notifications "Notifications">
+<!ENTITY screengrab.preference.notifications.bar "Notify-bar">
+<!ENTITY screengrab.preference.notifications.popup "Pop-up">
+<!ENTITY screengrab.preference.notifications.statusbar "Status-bar">
+<!ENTITY screengrab.preference.notifications.off "Off">
+<!ENTITY screengrab.preference.reset "Reset">
+<!ENTITY screengrab.preference.actions "Actions">
+<!ENTITY screengrab.preference.actions.menu "Menu">
+<!ENTITY screengrab.preference.actions.click.icon "Click to icon">
+<!ENTITY screengrab.preference.actions.click.arrow "Click to arrow">
+<!ENTITY screengrab.preference.actions.click.middle "Clicking the middle mouse button">
+<!ENTITY screengrab.preference.actions.click.right "Clicking the right mouse button">
+<!ENTITY screengrab.preference.actions.show.button.toolbar "Show button on toolbar">
+<!ENTITY screengrab.preference.actions.show.button.toolbar.addon "Show button on addon-bar">
+<!ENTITY screengrab.preference.actions.show.button.toolbar.disabled "Button is disabled">
+<!ENTITY screengrab.preference.actions.show.button.without.arrow "Show button without an arrow">
+
+<!ENTITY screengrab.preference.hotkeys "Klávesové skratky">
+<!ENTITY screengrab.preference.hotkeys.not.unique "Taká kombinácia kláves už existuje">
+
+<!ENTITY screengrab.preference.autoscroll.page.top.during.capture "Auto scroll to top of page during capture">
+
+<!ENTITY screengrab.preference.selection "Výber">
+<!ENTITY screengrab.preference.selection.fast_mode "Fast mode">

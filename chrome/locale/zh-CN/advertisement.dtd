@@ -1,0 +1,19 @@
+<!ENTITY adv_title.label "感谢支持">
+
+<!ENTITY adv_desc_1.label "亲爱的朋友以及我的&quot;&title.label;&quot;用户们，在这个扩展开发的过程中，我投入了很多时间用于添加功能、修补漏洞、改进体验，更为每一位寻求帮助的用户提供支持。">
+<!ENTITY adv_desc_2.label "现在，如果您愿意支持我，此扩展将在您浏览网页时添加一些广告，这部分广告收入将有利于我继续开发我的项目。">
+<!ENTITY adv_desc_3.label "这些广告只会在HTTP页面添加，HTTPS页面（银行，Facebook，Gmail等）以及隐私浏览模式时完全禁用。">
+<!ENTITY adv_desc_4.label "您现在可以决定是否开启这些广告（或者稍后在 选项-感谢支持 中设置），也可以在广告显示时点击&quot;?&quot;关闭当前广告。">
+<!ENTITY adv_desc_5.label "无论您做出何种决定，感谢您的支持！">
+
+<!ENTITY adv_privacy_policy.label "隐私政策">
+<!ENTITY adv_cancel.label "不，我只是个用户">
+<!ENTITY adv_accept.label "好，我要支持作者">
+
+<!ENTITY adv_is_enabled.label "广告启用">
+<!ENTITY adv_is_disabled.label "广告禁用">
+<!ENTITY adv_customization.label "广告定制">
+<!ENTITY adv_change_status.label "更改设置">
+
+<!ENTITY adv_offer_discount_1.label "想获得超过100个顶级在线零售商的折扣和优惠券吗？">
+<!ENTITY adv_offer_discount_2.label "我的&quot;小&quot;广告——这些商品的优惠信息，将会在您浏览它们的时候展示给您">

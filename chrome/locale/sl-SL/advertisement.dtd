@@ -1,0 +1,19 @@
+<!ENTITY adv_title.label "Oglasi">
+
+<!ENTITY adv_desc_1.label "Dragi prijatelji in uporabniki dodatka &quot;&title.label;&quot;, v razvoj te razširitve sem vložil veliko truda za dodajanje značilnosti, popravljanje hroščev, izboljšave in navsezadnje podporo, za katero so prosili uporabniki.">
+<!ENTITY adv_desc_2.label "Moj dodatek podpirajo izbirni oglasi, ki so dodani spletnim stranem, ki jih obiskujete. Dodatni prihodki, ki jih ustvari to izbirno oglaševanje, bodo prispevali k nadaljnjemu razvoju tega in drugih projektov.">
+<!ENTITY adv_desc_3.label "Oglasi bodo veljali samo za HTTP. Za HTTPS bodo oglasi vedno onemogočeni (spletne banke, Facebook, Gmail itd.). Onemogočeni so tudi v Zasebnem brskanju.">
+<!ENTITY adv_desc_4.label "Te oglase lahko sedaj omogočite ali onemogočite (ali kasneje v dodatku: Nastavitve-Oglasi). Kadarkoli lahko vsak neželeni oglas tudi izklopite s klikom na gumb &quot;?&quot; v kotu vsakega oglasa.">
+<!ENTITY adv_desc_5.label "Hvala za vašo podporo, cenim vsako vašo odločitev!">
+
+<!ENTITY adv_privacy_policy.label "Pravilnik o zasebnosti">
+<!ENTITY adv_cancel.label "Ne, ne želim podpirati vašega dela">
+<!ENTITY adv_accept.label "Da, popolnoma podpiram avtorja">
+
+<!ENTITY adv_is_enabled.label "Oglasi so omogočeni">
+<!ENTITY adv_is_disabled.label "Oglasi so onemogočeni">
+<!ENTITY adv_customization.label "Prilagajanje oglasov">
+<!ENTITY adv_change_status.label "spremeni stanje">
+
+<!ENTITY adv_offer_discount_1.label "Ali bi radi dobili popuste in brezplačne kupone za večkot 100 vodilnih spletnih trgovin?">
+<!ENTITY adv_offer_discount_2.label "Predlagani oglasi so majhni nasveti o najnovjših popustih, ki se prikažejo na vrhu strani za določene obiskane trgovine.">
